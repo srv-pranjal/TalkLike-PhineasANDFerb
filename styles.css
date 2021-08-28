@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+
 * {
   margin: 0;
   padding: 0;
-  font-family: "Nunito Sans", cursive;
 }
 
 body {
-  font-family: "Nunito Sans", cursive;
+  font-family: 'Hina Mincho', serif;
+  font-weight: bold;
   color: #fff;
   position: relative;
   height: 100%;
   overflow: hidden;
+  letter-spacing: 1px;
 }
 body::before {
   content: "";
@@ -41,7 +45,7 @@ section {
 #txt-input {
   display: block;
   width: 80%;
-  height: 10rem;
+  height: 8.5rem;
   padding: 1.5rem;
   margin: auto;
   font-size: 1.2rem;
@@ -53,6 +57,8 @@ section {
   border-radius: 15px;
   text-align: center;
   text-transform: uppercase;
+  font-family: 'Jost', sans-serif;
+  font-weight: bold;
   margin: 2rem auto;
   cursor: pointer;
   background-image: linear-gradient(#c8db16, #ff2701);
@@ -64,18 +70,20 @@ section {
 }
 
 ::placeholder {
-  font-family: "Nunito Sans", cursive;
   font-size: 1.2rem;
+  font-family: 'Hina Mincho', serif;;
+  font-weight: bold;
 }
 #result {
   border: 2px solid black;
   margin: auto;
   width: 80%;
-  height: 10rem;
-  font-size: 1.2rem;
+  height: 8.5rem;
+  font-size: 1.3rem;
   padding: 1rem;
   background-color: white;
   color: #040404;
+  margin-bottom: 1rem;
 }
 #result:empty::before {
   content: "Output will be displayed here";
